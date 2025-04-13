@@ -1,3 +1,5 @@
+// Grace test
+
 import DetailPage from "./DetailPage";
 import Link from "next/link";
 
