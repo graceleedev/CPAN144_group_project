@@ -9,6 +9,9 @@ export default function NavBar() {
       <Link href="/restaurants">
         Restaurants
       </Link>
+      <Link href="/reservations">
+        My Reservations
+      </Link>
     </nav>
   );
 }
