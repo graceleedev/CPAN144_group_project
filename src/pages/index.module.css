@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Lobster";
+  src: url("/fonts/Lobster-Regular.ttf") format('ttf');
+}
+
+.container {
+  text-align: center;
+  margin-top: 2rem; 
+  width: 100%;
+  height: 800px;
+  background-image: url(https://th.bing.com/th/id/R.6f6e63a198908a836a85952fe120fe27?rik=8jkIEWZwSTbTBA&riu=http%3a%2f%2fcdn.kdhamptons.com%2fwp-content%2fuploads%2f2012%2f01%2f24045405%2fImage15.jpg&ehk=FJY%2fsadt7zHC4FFN1qvzYTcvbXsz7Dy%2fpCpw1WrVj0w%3d&risl=&pid=ImgRaw&r=0);
+  filter: brightness(1.1) contrast(0.6) saturate(0.8);
+  background-size: cover;
+  background-position: center;
+  font-family: "Lobster", cursive;
+}
+
+.title {
+  color: white;
+  font-size: xx-large;
+}
+
+.button {
+  cursor: pointer;
+  background-color: rgb(220, 120, 30);
+  font-size: larger;
+  color: #FFD700;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px #FFD700;
+}
