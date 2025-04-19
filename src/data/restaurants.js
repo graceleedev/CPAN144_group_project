@@ -6,7 +6,8 @@ export const restaurants = [
       rating: 4.6,
       reviews: 1482,
       location: '972 College St',
-      //Need real map embed here
+      //imageUrl: the-image-here
+      //mapUrl: map-embed-here
     },
     {
       id: '2',
@@ -15,7 +16,8 @@ export const restaurants = [
       rating: 4.8,
       reviews: 2553,
       location: '438 Dundas St W',
-      //Need real map embed here
+      //imageUrl: the-image-here
+      //mapUrl: map-embed-here
     },
     {
       id: '3',
@@ -24,7 +26,8 @@ export const restaurants = [
       rating: 4.5,
       reviews: 329,
       location: '850 Wilson Ave',
-      //Need real map embed here
+      //imageUrl: the-image-here
+      //mapUrl: map-embed-here
     }
   ];
   
