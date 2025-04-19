@@ -1,13 +1,14 @@
 import Link from 'next/link';
+import styles from './Card.module.css';
 
 export default function RestaurantCard({ restaurant }) {
   return (
-    <div style={{ border: '1px solid #ddd', padding: '1rem' }}>
-      <h2>{restaurant.name}</h2>
-      <p>Category: {restaurant.category}</p>
-      <p>Rating: {restaurant.rating} ⭐ ({restaurant.reviews} reviews)</p>
+    <div  className={styles.container}>
+      <h2 className={styles.h2}>{restaurant.name}</h2>
+      <p className={styles.p}>Category: {restaurant.category}</p>
+      <p className={styles.p}>Rating: {restaurant.rating} ⭐ ({restaurant.reviews} reviews)</p>
       <Link href={`/restaurant/${restaurant.id}`}>
-        <button>View Details & Reserve</button>
+        <button className={styles.button}>View Details & Reserve</button>
       </Link>
     </div>
   );

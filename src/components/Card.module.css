@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Playwrite México Guides";
+  src: url("/fonts/PlaywriteMXGuides-Regular.ttf") format('ttf');
+}
+
+@font-face {
+  font-family: "Thin 100";
+  src: url("/fonts/BigShouldersInline-Thin.ttf") format('ttf');
+}
+
+@font-face {
+  font-family: "Playfair Display SC";
+  src: url("/fonts/PlayfairDisplaySC-Regular.ttf") format('ttf');
+}
+
+.nav {
+  padding: 1rem;
+  border-Bottom: 1px solid #ccc;
+  font-family: 'Playfair Display SC', cursive;
+}
+
+
+.container {
+  border: 1px solid #ddd; 
+  padding: 1rem; 
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 250px;
+  background-image: url(https://i.etsystatic.com/17358183/r/il/5fe841/3469763423/il_fullxfull.3469763423_olvh.jpg);
+}
+
+.h2 {
+  font-family: "Playwrite México Guides", cursive;
+  font-size: 40px; 
+}
+
+.p {
+  font-size: 20px;
+}
+
+.button {
+  cursor: pointer;
+  background-color: #A8B8C2;
+  font-size: larger;
+  border: none;
+  border-radius: 10px;
+  transition: 0.2s;
+  font-family: "Thin 100", cursive;
+}
+
+.button:active{
+  transform: scale(0.95);
+  box-shadow: 0 5px 10px #FFB16D;
+}
