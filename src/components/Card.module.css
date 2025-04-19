@@ -1,3 +1,4 @@
+/*ReservationCard.jsx*/
 @font-face {
   font-family: "Playwrite México Guides";
   src: url("/fonts/PlaywriteMXGuides-Regular.ttf") format('ttf');
@@ -7,18 +8,6 @@
   font-family: "Thin 100";
   src: url("/fonts/BigShouldersInline-Thin.ttf") format('ttf');
 }
-
-@font-face {
-  font-family: "Playfair Display SC";
-  src: url("/fonts/PlayfairDisplaySC-Regular.ttf") format('ttf');
-}
-
-.nav {
-  padding: 1rem;
-  border-Bottom: 1px solid #ccc;
-  font-family: 'Playfair Display SC', cursive;
-}
-
 
 .container {
   border: 1px solid #ddd; 
@@ -52,4 +41,27 @@
 .button:active{
   transform: scale(0.95);
   box-shadow: 0 5px 10px #FFB16D;
+}
+/*NavBar.jsx*/
+@font-face {
+  font-family: "Playfair Display SC";
+  src: url("/fonts/PlayfairDisplaySC-Regular.ttf") format('ttf');
+}
+
+.nav {
+  padding: 1rem;
+  border-Bottom: 1px solid #ccc;
+  font-family: 'Playfair Display SC', cursive;
+}
+/*pages/restaurants.js*/
+.restaurants {
+  text-align: center;
+  font-family: "Thin 100", cursive;
+}
+
+.select {
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: x-large;
+  cursor: pointer;
 }

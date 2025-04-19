@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { restaurants, categories } from '../data/restaurants';
 import RestaurantList from '../components/RestaurantList';
+import styles from '../components/Card.module.css';
 
 export default function RestaurantsPage() {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -12,10 +13,11 @@ export default function RestaurantsPage() {
 
   return (
     <div>
-      <h1>Restaurants</h1>
+      <h1 className={styles.restaurants}>Restaurants</h1>
 
       {/* Category filter */}
       <select
+        className={styles.select}
         value={selectedCategory}
         onChange={e => setSelectedCategory(e.target.value)}
       >
