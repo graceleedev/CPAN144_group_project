@@ -1,10 +1,13 @@
 import { useState } from 'react';
 import styles from './reservation.module.css';
+import { restaurants } from '@/data/restaurants';
 
 export default function ReservationForm({ restaurantId }) {
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
   const [partySize, setPartySize] = useState(2);
+
+  const restaurant = restaurants.find(r => r.id === restaurantId);
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -41,7 +44,21 @@ export default function ReservationForm({ restaurantId }) {
         </div>
         <button type="submit">Reserve</button>
       </form>
-      <img src="https://static.prod.r53.tablethotels.com/media/hotels/slideshow_images_staged/large/1297145.jpg" alt="Giulietta" width='600px' style={{marginTop: '20px'}}/>
+
+      <div className={styles.container}>
+      {restaurant ? (
+        <div>
+          <h2>{restaurant.name}</h2>
+          <img
+            src={restaurant.imageUrl}
+            alt={restaurant.name}
+            className={styles.image}
+          />
+        </div>
+      ) : (
+        <p>Restaurant not found</p>
+      )}
+    </div>
     </div> 
   );
 }

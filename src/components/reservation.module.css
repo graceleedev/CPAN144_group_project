@@ -19,3 +19,8 @@
   margin-bottom: 1rem;
   font-size: x-large;
 }
+
+.image {
+  height: 700px;
+  margin-top: 20px;
+}
