@@ -23,11 +23,23 @@
 }
 
 .matsuteiSukiyaki {
-  background-image: url(https://images.squarespace-cdn.com/content/v1/58fd82dbbf629ab224f81b68/1510916556568-TL5025S6TAJTGXT0L3XU/ke17ZwdGBToddI8pDm48kFdq1u76t7FGbyjQAWwKGVEUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcPhA5QcZSUYrlAu5kEQUSorZ8g6osZo0NZE7A-9ZfgzohqQ9u80kkSKtu3eyQAP-7/Taikan-Yokoyama-Mount-Penglai.jpg);
+  background-image: url(https://stepbysteppainting.net/wp-content/uploads/2022/01/IMG_2378-900x680.jpg);
 }
 
 .laÚnicaPanadería {
   background-image: url(https://img.etsystatic.com/il/eb1b3d/1236783504/il_fullxfull.1236783504_ka5u.jpg?version=0);
+}
+
+.aromaFineIndianCuisine {
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/18/13/53/idol-1834688_1280.jpg);
+}
+
+.mandarinRestaurant {
+  background-image: url(https://www.chinese-showcase.com/cdn/shop/articles/a_thousand_li_of_rivers_and_mountains.jpg?v=1703462245&width=1100);
+}
+
+.scaramoucheRestaurant {
+  background-image: url(https://media.timeout.com/images/103044750/1372/772/image.jpg);
 }
 
 .h2 {
@@ -53,6 +65,18 @@
   transform: scale(0.95);
   box-shadow: 0 5px 10px #FFB16D;
 }
+/*RestaurantList.jsx*/
+.card {
+  display: grid; 
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, 1fr);
+}
+.cardItem {
+  flex: 0 1 calc(50% - 10px);
+  box-sizing: border-box;
+}
 /*NavBar.jsx*/
 @font-face {
   font-family: "Playfair Display SC";
@@ -68,6 +92,7 @@
 .restaurants {
   text-align: center;
   font-family: "Thin 100", cursive;
+  font-size: 60px;
 }
 
 .select {
@@ -77,6 +102,5 @@
   cursor: pointer;
 }
 
-/* .card {} */
 
-/* .image {} */
+
