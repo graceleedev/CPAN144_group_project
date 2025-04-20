@@ -13,25 +13,29 @@
   background-size: cover;
   background-position: center;
   font-family: "Lobster", cursive;
+  font-weight: bold;
 }
 
 .title {
-  color: white;
+  color: #0066FF;
   font-size: xx-large;
+  text-shadow: -2px -2px 0 black;
 }
 
 .button {
   cursor: pointer;
-  background-color: rgb(65, 36, 36);
+  background-color: #1E90FF;
   font-size: larger;
+  font-weight: bold;
   color: #FFD700;
   padding: 10px;
   border: none;
   border-radius: 10px;
   transition: 0.2s;
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px #FFD700;
+  }
 }
 
-.button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 8px 20px #FFD700;
-}
