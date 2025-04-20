@@ -3,13 +3,7 @@ import styles from './Card.module.css';
 
 export default function RestaurantCard({ restaurant }) {
   return (
-    <div className={styles.card}>
-    <img
-      src={restaurant.imageUrl}
-      alt={restaurant.name}
-      className={styles.image}
-    />
-    
+    <div className={`${styles[restaurant.className]}`}>
     <div  className={styles.container}>
       <h2 className={styles.h2}>{restaurant.name}</h2>
       <p className={styles.p}>Category: {restaurant.category}</p>

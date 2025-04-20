@@ -22,7 +22,7 @@
 
 .button {
   cursor: pointer;
-  background-color: #52B2BF;
+  background-color: rgb(65, 36, 36);
   font-size: larger;
   color: #FFD700;
   padding: 10px;
