@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 import Link from 'next/link';
 import styles from './index.module.css';
+=======
+// Grace test
+// Tyler Test
+>>>>>>> 6e031b22bb2bbbedbc399fc720fffb5078ccbea6
 
 export default function Home() {
   return (
