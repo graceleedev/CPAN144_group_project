@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import styles from './reservation.module.css';
+import styles from '../styles/reservation.module.css';
 import { restaurants } from '@/data/restaurants';
 import { useRouter } from 'next/router';
 

@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { restaurants } from '../../data/restaurants';
-import ReservationForm from '../../components/ReservationForm';
+import ReservationForm from '../../components/ReservationForm.js';
 import ReviewList from '../../components/ReviewList';
 
 export default function RestaurantDetail() {

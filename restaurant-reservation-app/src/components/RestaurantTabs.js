@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Overview from './Overview';
-import Photos from './Photos';
+import RestaurantImage from './RestaurantImage';
 import Reviews from './Reviews';
 
 export default function RestaurantTabs({ restaurant }) {
@@ -21,7 +21,7 @@ export default function RestaurantTabs({ restaurant }) {
       </div>
 
       {activeTab === 'overview' && <Overview description={restaurant.description} />}
-      {activeTab === 'photos' && <Photos images={restaurant.images} />}
+      {activeTab === 'photos' && <RestaurantImage images={restaurant.images} />}
       {activeTab === 'reviews' && <Reviews reviews={restaurant.reviews} />}
     </div>
   );

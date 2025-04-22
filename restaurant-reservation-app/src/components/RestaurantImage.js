@@ -1,4 +1,4 @@
-export default function Photos({ images }) {
+export default function RestaurantImage({ images }) {
     return (
       <div>
         <h2 className="text-xl font-semibold mb-2">Photos</h2>
