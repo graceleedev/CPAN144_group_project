@@ -1,8 +1,12 @@
+'use client';
+
 import { useState } from 'react';
 import styles from './reservation.module.css';
 import { restaurants } from '@/data/restaurants';
+import { useRouter } from 'next/router';
 
 export default function ReservationForm({ restaurantId }) {
+  const router = useRouter();
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
   const [partySize, setPartySize] = useState(2);
@@ -13,6 +17,19 @@ export default function ReservationForm({ restaurantId }) {
     e.preventDefault();
     console.log('Reserve', { restaurantId, date, time, partySize });
     alert(`Reserved for ${partySize} on ${date} at ${time}`);
+    const reservation = {
+      restaurantId,
+      date,
+      time,
+      partySize,
+    };
+
+    localStorage.setItem('latestReservation', JSON.stringify(reservation));
+
+    router.push({
+      pathname: '/reservations',
+      query: reservation,
+    });
   };
 
   return (
