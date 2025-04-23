@@ -4,6 +4,8 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { useSearchParams, usePathname } from 'next/navigation';
 import { restaurants } from '@/data/restaurants';
+import styles from '../styles/reservation.module.css';
+
 
 export default function MyReservations() {
   const searchParams = useSearchParams();
@@ -42,7 +44,7 @@ export default function MyReservations() {
   const restaurant = restaurants.find(r => r.id === restaurantId);
 
   return (
-    <div style={{ padding: '1rem', fontFamily: 'Arial, sans-serif' }}>
+    <div className={styles.container}>
       <h1>My Reservations</h1>
       <ul>
         <li>Restaurant: {restaurant?.name}</li>

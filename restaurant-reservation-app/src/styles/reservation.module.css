@@ -1,12 +1,22 @@
-/*ReservationForm.jsx*/
-
-.div {
-  margin-bottom: 1rem;
-  font-size: 1em;
+.container li {
+  list-style-type: none;
 }
 
-.form {
-  margin-left: 50px;
-  margin-top: 50px;
-  font-size: 24px;
+.container button {
+  margin-top: 2em;
+  border: none;
+  background-color: #274437;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.container h1 {
+  margin: 1em;
+}
+
+.container {
+  background-color: #F9F3E5;
+  padding: 2em;
 }
