@@ -1,3 +1,4 @@
+// components/Map.js
 import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api';
 // run the command below if it throws an error
 // npm install @react-google-maps/api
