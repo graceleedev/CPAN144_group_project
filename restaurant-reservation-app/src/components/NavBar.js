@@ -1,17 +1,14 @@
 import Link from 'next/link';
-import styles from '../styles/Card.module.css';
+import styles from '../styles/NavBar.module.css';
 
 export default function NavBar() {
   return (
-    <nav className={styles.nav}>
-      <Link href="/" style={{ marginRight: '1rem' }}>
-        Home
-      </Link>
-      <Link href="/restaurants" style={{ marginRight: '1rem' }}>
-        Restaurants
+    <nav className={styles.container}>
+      <Link href="/" className={styles.logo}>
+        <p className={styles.text}>BistroTable</p>
       </Link>
       <Link href="/reservations">
-        My Reservations
+        <button className={styles.button}>My Reservations</button>
       </Link>
     </nav>
   );}

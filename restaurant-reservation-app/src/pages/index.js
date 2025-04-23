@@ -3,15 +3,10 @@ import styles from '../styles/index.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <div className={styles.title}>
-      <h1>Welcome to Our Reservation Service</h1>
-      <p>Find and book a table at your favorite restaurants.</p>
+    <>
+      <div className={styles.heroImg}>
+        <h1 className={styles.title}>Share bites and moments <br/> with the ones you love</h1>
       </div>
-      
-      <Link href="/restaurants">
-        <button className={styles.button}>Browse Restaurants</button>
-      </Link>
-    </div>
+    </>
   );
 }

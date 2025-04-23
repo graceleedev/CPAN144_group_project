@@ -1,11 +1,14 @@
 import NavBar from './NavBar';
 import Footer from './Footer';
+import Main from './Main';
+
 
 export default function Layout({ children }) {
   return (
     <>
       <NavBar />
-      <main style={{ padding: '1rem' }}>{children}</main>
+      <header>{children}</header>
+      <Main />
       <Footer />
     </>
   );
