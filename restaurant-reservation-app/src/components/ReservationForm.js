@@ -1,16 +1,9 @@
 'use client'; // Enables client-side features like state and routing in a Next.js app
 
-<<<<<<< HEAD
 import { useState } from 'react'; // Importing necessary hooks and modules
 import styles from '../styles/reservation.module.css'; // Import custom CSS module for styling
 import { restaurants } from '@/data/restaurants'; // Import mock restaurant data
 import { useRouter } from 'next/router'; // Import routing hook from Next.js
-=======
-import { useState } from 'react';
-import styles from '../styles/reservation.module.css';
-import { restaurants } from '@/data/Restaurants';
-import { useRouter } from 'next/router';
->>>>>>> 3d623624c4b655120aaa5144ac2ffc40bf2d4ed1
 
 // Functional component that handles the reservation form
 export default function ReservationForm({ restaurantId }) {
