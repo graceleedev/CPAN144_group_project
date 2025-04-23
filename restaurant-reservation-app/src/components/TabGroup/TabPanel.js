@@ -11,7 +11,6 @@ export default function TabPanel({ children, index }) {
     paddingRight: '100px',
     lineHeight: '1.5em',
     padding: '10px',
-    backgroundColor: '#D9C0A3',
     borderRadius: '5px'
   }}>{children}</div> : null;
 }
