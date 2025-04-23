@@ -4,7 +4,14 @@ export default function ReviewList({ reviews }) {
     return (
       <ul>
         {reviews.map((text, i) => (
-          <li key={i}>{text}</li>
+          <li key={i} style={{
+            backgroundColor: '#D9C0A3',
+            borderRadius: '5px',
+            padding: '10px',
+            marginBottom: '10px',
+            listStyleType: 'none'
+
+          }}>{text}</li>
         ))}
       </ul>
     );

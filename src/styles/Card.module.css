@@ -2,44 +2,19 @@
 
 .container {
   border: none; 
-  padding: 1rem; 
   text-align: center;
-  text-shadow: -1px -1px 0 white;
   width: 100%;
-  height: 250px; 
-}
-
-.giulietta {
-  background-image: url(https://i.etsystatic.com/17358183/r/il/5fe841/3469763423/il_fullxfull.3469763423_olvh.jpg);
-}
-
-.matsuteiSukiyaki {
-  background-image: url(https://stepbysteppainting.net/wp-content/uploads/2022/01/IMG_2378-900x680.jpg);
-}
-
-.laÚnicaPanadería {
-  background-image: url(https://img.etsystatic.com/il/eb1b3d/1236783504/il_fullxfull.1236783504_ka5u.jpg?version=0);
-}
-
-.aromaFineIndianCuisine {
-  background-image: url(https://cdn.pixabay.com/photo/2016/11/18/13/53/idol-1834688_1280.jpg);
-}
-
-.mandarinRestaurant {
-  background-image: url(https://www.chinese-showcase.com/cdn/shop/articles/a_thousand_li_of_rivers_and_mountains.jpg?v=1703462245&width=1100);
-}
-
-.scaramoucheRestaurant {
-  background-image: url(https://media.timeout.com/images/103044750/1372/772/image.jpg);
+  height: 18em; 
 }
 
 .h2 {
-  font-family: "Playwrite México Guides", cursive;
-  font-size: 40px; 
+  font-size: 1em;
+  font-weight: 900;
 }
 
 .p {
-  font-size: 20px;
+  font-size: 0.9em;
+  font-weight: 100;
 }
 
 .button {
@@ -56,33 +31,35 @@
   transform: scale(0.95);
   box-shadow: 0 5px 10px #FFB16D;
 }
-/*RestaurantList.jsx*/
-.card {
-  display: grid;
-  gap: 3rem;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  grid-template-columns: repeat(2, 1fr);
-}
 
-.cardItem {
-  flex: 0 1 calc(50% - 10px);
-  box-sizing: border-box;
-}
-
-/*pages/restaurants.js*/
+/* 
 .restaurants {
   text-align: center;
   font-family: "Thin 100", cursive;
   font-size: 60px;
-}
-
+} */
+/* 
 .select {
   margin-bottom: 15px;
   border-radius: 5px;
   font-size: x-large;
   cursor: pointer;
+} */
+
+.img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 2em 2em 0 0;
 }
 
+.imgWrapper {
+  height: 200px ; 
+}
+
+.link {
+  height: 300px ;
+}
 
 

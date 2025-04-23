@@ -1,0 +1,21 @@
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+  
+.listItem {
+    margin: 2em 1em;
+    background-color: #F9F3E5;
+    border-radius: 1.5em;
+}
+
+.title {
+    margin-left: 1em;
+    margin-top: 3em;
+    font-weight: 900;
+}
+  
+
+
