@@ -1,7 +1,7 @@
 'use client'; // Enables client-side features like state and routing in a Next.js app
 
-import { useState } from 'react'; // Importing necessary hooks and modules
-import styles from '../styles/reservation.module.css'; // Import custom CSS module for styling
+import { useState, useEffect } from 'react'; // Importing necessary hooks and modules
+import styles from '../styles/Form.module.css'; // Import custom CSS module for styling
 import { restaurants } from '@/data/restaurants'; // Import mock restaurant data
 import { useRouter } from 'next/router'; // Import routing hook from Next.js
 
@@ -13,13 +13,28 @@ export default function ReservationForm({ restaurantId }) {
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
   const [partySize, setPartySize] = useState(2);
+  const [validationMessage, setValidationMessage] = useState('');
 
    // Find the restaurant based on the provided restaurantId
   const restaurant = restaurants.find(r => r.id === restaurantId);
 
+  // Live validation
+  useEffect(() => {
+    if (date && !time) {
+      setValidationMessage('Please select a time.');
+    } else {
+      setValidationMessage('');
+    }
+  }, [date, time]);
+
     // Function to handle form submission
   const handleSubmit = e => {
     e.preventDefault(); // Prevents default form submission (page reload)
+
+    if (!date || !time) {
+      setValidationMessage('Please select both date and time.');
+      return;
+    }
 
     // Log and show an alert for confirmation
     console.log('Reserve', { restaurantId, date, time, partySize });
@@ -44,7 +59,7 @@ export default function ReservationForm({ restaurantId }) {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       {/* Reservation form */}
       <form onSubmit={handleSubmit} className={styles.form}>
         <div className={styles.div}>
@@ -52,82 +67,42 @@ export default function ReservationForm({ restaurantId }) {
             <input type="date"
               value={date}
               onChange={e => setDate(e.target.value)}
-              style={{
-                padding: '10px',
-                margin: '5px',
-                border: 'none',
-                backgroundColor: 'lightgray',
-                borderRadius: '5px',
-                fontSize: '16px',
-                width: '360px'
-              }}
+              className={styles.input}
             />
           </label>
         </div>
 
         {/* Time input */}
-        <div className={styles.div}>
+        <div>
           <label>Time: 
             <input type="time"
               value={time}
               onChange={e => setTime(e.target.value)}
-              style={{
-                padding: '10px',
-                margin: '5px',
-                border: 'none',
-                backgroundColor: 'lightgray',
-                borderRadius: '5px',
-                fontSize: '16px',
-                width: '360px'
-              }}
+              className={styles.input}
             />
           </label>
         </div>
 
          {/* Party size input */}
-        <div className={styles.div}>
+        <div>
           <label>Party Size: 
             <input type="number" min="1" max="20"
               value={partySize}
               onChange={e => setPartySize(e.target.value)}
-              style={{
-                padding: '10px',
-                margin: '5px',
-                border: 'none',
-                backgroundColor: 'lightgray',
-                borderRadius: '5px',
-                fontSize: '16px',
-                width: '300px'
-              }}
+              className={styles.input}
             />
           </label>
         </div>
 
         {/* Submit button */}
         <button type="submit" 
-          style={{
-            backgroundColor: '#FFAC32',
-            padding: '10px',
-            fontSize: '16px',
-            borderRadius: '5px',
-            }}>Reserve</button>
+          className={styles.button}>Reserve</button>
+        {validationMessage && (
+            <p style={{ color: 'red', fontSize: '0.9rem' }}>{validationMessage}</p>
+          )}
       </form>
 
-      {/* Restaurant confirmation (can be expanded to show more info) */}
-      <div className={styles.container}>
-      {restaurant ? (
-        <div>
-          {/* <h2>{restaurant.name}</h2> */}
-          {/* <img
-            src={restaurant.imageUrl}
-            alt={restaurant.name}
-            className={styles.image}
-          /> */}
-        </div>
-      ) : (
-        <p>Restaurant not found</p>
-      )}
-    </div>
+
     </div> 
   );
 }
