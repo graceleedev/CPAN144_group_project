@@ -1,0 +1,33 @@
+/* color palette 
+#FFAC32
+#274437
+#D9C0A3
+*/
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    text-decoration: none;
+    color: #FFAC32;
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: -0.06em;
+}
+
+.text {
+    margin-left: 0.5em;
+}
+
+.button {
+    border: none;
+    background-color: #274437;
+    color: white;
+    margin: 2em;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+

@@ -1,0 +1,45 @@
+/* color palette 
+#FFAC32
+#274437
+#D9C0A3
+*/
+
+.heroImg {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.3), 
+    rgba(0, 0, 0, 0.3)
+  ),url('../images/heroImg2.jpg');
+  background-size: cover;
+  background-position: 100%;
+  height: 20em;
+  width: 100%;
+
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+  text-align: center;
+}
+
+.title {
+  color: #EFB036;
+  font-size: 3em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+  cursor: pointer;
+  /* background-color: #1E90FF; */
+  font-size: larger;
+  font-weight: bold;
+  /* color: #FFD700; */
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  /* transition: 0.2s; */
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px #FFD700;
+  }
+}
+
