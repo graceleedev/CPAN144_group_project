@@ -4,6 +4,7 @@ import { restaurants } from '../../data/restaurants';
 import ReservationForm from '../../components/ReservationForm.js';
 import ReviewList from '../../components/ReviewList';
 import styles from '../../styles/Detail.module.css'
+import PostAPI from '../api/PostAPI'
 
 import { TabGroup } from '@/components/TabGroup/TabGroup';
 import Tab from '@/components/TabGroup/Tab';
@@ -42,7 +43,8 @@ export default function RestaurantDetail() {
         </TabGroup>
           <div className={styles.review}>
             <h2>Reviews</h2>
-            <ReviewList reviews={[  'Giulietta in Toronto offers a consistently "amazing experience" with "outstanding food" and "exceptional service." Diners rave about its "beautifully designed ambiance" and standout dishes like the "grilled octopus" and "lobster risotto."', 'Overall the food was fresh and delicious and the portions were also very good. The fresh pasta in the ragu was made to perfection. Our main critiques are we were seated 20 minutes into our reservation time. We also reserved a counter seat but were placed at the bar. ' ]} />
+            <PostAPI/>
+            {/* <ReviewList reviews={[  'Giulietta in Toronto offers a consistently "amazing experience" with "outstanding food" and "exceptional service." Diners rave about its "beautifully designed ambiance" and standout dishes like the "grilled octopus" and "lobster risotto."', 'Overall the food was fresh and delicious and the portions were also very good. The fresh pasta in the ragu was made to perfection. Our main critiques are we were seated 20 minutes into our reservation time. We also reserved a counter seat but were placed at the bar. ' ]} /> */}
           </div>
         </div>
         <div className={styles.form}>

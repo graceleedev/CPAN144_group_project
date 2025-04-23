@@ -3,7 +3,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { useSearchParams, usePathname } from 'next/navigation';
-import { restaurants } from '@/data/restaurants';
+import { restaurants } from '@/data/Restaurants';
 
 export default function MyReservations() {
   const searchParams = useSearchParams();
