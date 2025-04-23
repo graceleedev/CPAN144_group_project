@@ -54,12 +54,7 @@ export default function RestaurantDetail() {
         <div className={styles.location}>
           <h3 style={{textAlign: 'center'}}>Location</h3>
         </div>
-        
       </div>
-
-
-
-
     </div>
   );
 }
