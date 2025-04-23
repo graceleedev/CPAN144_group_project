@@ -4,6 +4,7 @@ import { restaurants } from '../../data/Restaurants';
 import ReservationForm from '../../components/ReservationForm.js';
 import ReviewList from '../../components/ReviewList';
 import styles from '../../styles/Detail.module.css'
+import Map from '../../components/Map';
 import PostAPI from '../api/PostAPI'
 
 import { TabGroup } from '@/components/TabGroup/TabGroup';
@@ -53,13 +54,9 @@ export default function RestaurantDetail() {
         </div>
         <div className={styles.location}>
           <h3 style={{textAlign: 'center'}}>Location</h3>
+          <Map lat={restaurant.latitude} lng={restaurant.longitude} />
         </div>
-        
       </div>
-
-
-
-
     </div>
   );
 }
