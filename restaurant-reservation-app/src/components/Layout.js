@@ -1,6 +1,6 @@
 import NavBar from './NavBar';
 import Footer from './Footer';
-import Main from './Main';
+
 
 
 export default function Layout({ children }) {
@@ -8,7 +8,6 @@ export default function Layout({ children }) {
     <>
       <NavBar />
       <header>{children}</header>
-      <Main />
       <Footer />
     </>
   );
