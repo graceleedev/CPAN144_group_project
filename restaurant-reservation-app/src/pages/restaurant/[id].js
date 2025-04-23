@@ -1,6 +1,6 @@
 'use client';
 import { useRouter } from 'next/router';
-import { restaurants } from '../../data/restaurants';
+import { restaurants } from '../../data/Restaurants';
 import ReservationForm from '../../components/ReservationForm.js';
 import ReviewList from '../../components/ReviewList';
 import styles from '../../styles/Detail.module.css'
@@ -48,11 +48,11 @@ export default function RestaurantDetail() {
           </div>
         </div>
         <div className={styles.form}>
-          <h3>Make a Reservation</h3>
+          <h3 style={{textAlign: 'center'}}>Make a Reservation</h3>
           <ReservationForm restaurantId={restaurant.id} />
         </div>
         <div className={styles.location}>
-          <h3>Location</h3>
+          <h3 style={{textAlign: 'center'}}>Location</h3>
         </div>
         
       </div>

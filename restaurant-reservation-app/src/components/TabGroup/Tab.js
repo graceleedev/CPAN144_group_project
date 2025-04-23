@@ -10,7 +10,11 @@ export default function Tab({ children, index }) {
       style={{
         fontWeight: activeIndex === index ? 'bold' : 'normal',
         textDecoration: activeIndex === index ? 'underline' : 'none',
-        marginRight: '10px'
+        marginRight: '10px',
+        padding: '10px',
+        fontSize: '16px',
+        border: 'none',
+        marginLeft: '10px'
       }}
     >
       {children}
