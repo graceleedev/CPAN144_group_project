@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import styles from '../styles/reservation.module.css';
-import { restaurants } from '@/data/restaurants';
+import { restaurants } from '@/data/Restaurants';
 import { useRouter } from 'next/router';
 
 export default function ReservationForm({ restaurantId }) {
