@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from '../styles/index.module.css';
 import RestaurantList from '../components/RestaurantList';
-import { restaurants } from '@/data/Restaurants';
+import { restaurants } from '@/data/restaurants';
 
 export default function Home() {
   return (
