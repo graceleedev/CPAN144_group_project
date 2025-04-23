@@ -1,3 +1,4 @@
+// components/Map.js
 import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api';
 
 export default function Map({ lat, lng }) {

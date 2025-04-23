@@ -1,6 +1,6 @@
 'use client';
 import { useRouter } from 'next/router';
-import { restaurants } from '../../data/Restaurants';
+import { restaurants } from '../../data/restaurants';
 import ReservationForm from '../../components/ReservationForm.js';
 import ReviewList from '../../components/ReviewList';
 import styles from '../../styles/Detail.module.css'
