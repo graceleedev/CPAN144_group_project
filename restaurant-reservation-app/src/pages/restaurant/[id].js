@@ -41,16 +41,16 @@ export default function RestaurantDetail() {
           <TabPanel index={2}></TabPanel>
         </TabGroup>
           <div className={styles.review}>
-            <h2>Reviews</h2>
+            <h2 style={{marginLeft: '40px'}}>Reviews</h2>
             <ReviewList reviews={[  'Giulietta in Toronto offers a consistently "amazing experience" with "outstanding food" and "exceptional service." Diners rave about its "beautifully designed ambiance" and standout dishes like the "grilled octopus" and "lobster risotto."', 'Overall the food was fresh and delicious and the portions were also very good. The fresh pasta in the ragu was made to perfection. Our main critiques are we were seated 20 minutes into our reservation time. We also reserved a counter seat but were placed at the bar. ' ]} />
           </div>
         </div>
         <div className={styles.form}>
-          <h3>Make a Reservation</h3>
+          <h3 style={{textAlign: 'center'}}>Make a Reservation</h3>
           <ReservationForm restaurantId={restaurant.id} />
         </div>
         <div className={styles.location}>
-          <h3>Location</h3>
+          <h3 style={{textAlign: 'center'}}>Location</h3>
         </div>
         
       </div>
