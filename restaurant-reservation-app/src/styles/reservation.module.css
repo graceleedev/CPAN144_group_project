@@ -1,26 +1,6 @@
 /*ReservationForm.jsx*/
-.container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 200px;
-  background-image: url(https://i.pinimg.com/originals/83/05/c6/8305c6f90810a4b9fc16aeb1299f07f5.jpg);
-}
-
-.form {
-  height: 600px;
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 .div {
   margin-bottom: 1rem;
-  font-size: x-large;
-}
-
-.image {
-  height: 700px;
-  margin-top: 20px;
+  font-size: 1em;
 }

@@ -33,7 +33,7 @@ export default function ReservationForm({ restaurantId }) {
   };
 
   return (
-    <div className={styles.container}>
+    <div>
       <form onSubmit={handleSubmit} className={styles.form}>
         <div className={styles.div}>
           <label>Date: 
@@ -65,12 +65,12 @@ export default function ReservationForm({ restaurantId }) {
       <div className={styles.container}>
       {restaurant ? (
         <div>
-          <h2>{restaurant.name}</h2>
-          <img
+          {/* <h2>{restaurant.name}</h2> */}
+          {/* <img
             src={restaurant.imageUrl}
             alt={restaurant.name}
             className={styles.image}
-          />
+          /> */}
         </div>
       ) : (
         <p>Restaurant not found</p>
