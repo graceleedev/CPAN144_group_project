@@ -40,6 +40,15 @@ export default function ReservationForm({ restaurantId }) {
             <input type="date"
               value={date}
               onChange={e => setDate(e.target.value)}
+              style={{
+                padding: '10px',
+                margin: '5px',
+                border: 'none',
+                backgroundColor: 'lightgray',
+                borderRadius: '5px',
+                fontSize: '16px',
+                width: '360px'
+              }}
             />
           </label>
         </div>
@@ -48,6 +57,15 @@ export default function ReservationForm({ restaurantId }) {
             <input type="time"
               value={time}
               onChange={e => setTime(e.target.value)}
+              style={{
+                padding: '10px',
+                margin: '5px',
+                border: 'none',
+                backgroundColor: 'lightgray',
+                borderRadius: '5px',
+                fontSize: '16px',
+                width: '360px'
+              }}
             />
           </label>
         </div>
@@ -56,10 +74,25 @@ export default function ReservationForm({ restaurantId }) {
             <input type="number" min="1" max="20"
               value={partySize}
               onChange={e => setPartySize(e.target.value)}
+              style={{
+                padding: '10px',
+                margin: '5px',
+                border: 'none',
+                backgroundColor: 'lightgray',
+                borderRadius: '5px',
+                fontSize: '16px',
+                width: '300px'
+              }}
             />
           </label>
         </div>
-        <button type="submit">Reserve</button>
+        <button type="submit" 
+          style={{
+            backgroundColor: '#FFAC32',
+            padding: '10px',
+            fontSize: '16px',
+            borderRadius: '5px',
+            }}>Reserve</button>
       </form>
 
       <div className={styles.container}>
