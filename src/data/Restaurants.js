@@ -8,9 +8,10 @@ export const restaurants = [
       reviews: 1482,
       location: '972 College St',
       imageUrl: '/images/italian.jpg',
-      //source: https://unsplash.com/photos/pasta-with-green-leaf-vegetable-on-white-ceramic-bowl-do_0q9ohxx4
-      //mapUrl: map-embed-here
+      latitude: 43.665,
+      longitude: -79.3971,
     },
+
     {
       id: '2',
       className: 'matsuteiSukiyaki',
@@ -19,10 +20,11 @@ export const restaurants = [
       rating: 4.8,
       reviews: 2553,
       location: '438 Dundas St W',
-      imageUrl: '/images/japanese.jpg', 
-      //source: https://unsplash.com/photos/a-crab-on-a-plate-m6-2FQlwUBA     
-      //mapUrl: map-embed-here
+      imageUrl: '/images/japanese.jpg',
+      latitude: 43.6523,
+      longitude: -79.4000,
     },
+
     {
       id: '3',
       className: 'laÚnicaPanadería',
@@ -32,9 +34,10 @@ export const restaurants = [
       reviews: 329,
       location: '850 Wilson Ave',
       imageUrl: '/images/mexican.jpg', 
-      //source: https://unsplash.com/s/photos/mexican-food?license=free
-      //mapUrl: map-embed-here
+      latitude: 43.7652,
+      longitude: -79.5023,
     },
+
     {
       id: '4',
       className: 'aromaFineIndianCuisine',
@@ -44,9 +47,10 @@ export const restaurants = [
       reviews: 558,
       location: '287 King St W',
       imageUrl: '/images/indian.jpg', 
-      //source: https://unsplash.com/photos/a-table-filled-with-lots-of-different-types-of-food-DUOpUlw4uLY
-      //mapUrl: map-embed-here
+      latitude: 43.6508,
+      longitude: -79.3933,
     },
+
     {
       id: '5',
       className: 'mandarinRestaurant',
@@ -56,9 +60,10 @@ export const restaurants = [
       reviews: 213,
       location: '2200 Yonge Street',
       imageUrl: '/images/chinese.jpg',
-      //source: https://unsplash.com/photos/sliced-cake-on-white-ceramic-plate-ClAZvNHpCKE 
-      //mapUrl: map-embed-here
+      latitude: 43.70603,
+      longitude: -79.39850,
     },
+
     {
       id: '6',
       className: 'scaramoucheRestaurant',
@@ -68,8 +73,8 @@ export const restaurants = [
       reviews: 1715,
       location: 'One Benvenuto Place',
       imageUrl: '/images/french.jpg',
-      //source: https://unsplash.com/photos/pizza-with-green-leaf-on-white-ceramic-tray-H-VwuGQS278
-      //mapUrl: map-embed-here
+      latitude: 43.6940,
+      longitude: -79.3871,
     },
   ];
   

@@ -1,0 +1,32 @@
+.container {
+    margin-top: 10em;
+    font-size:larger;
+    background-color:#274437;
+    color:white;
+    padding: 3em;
+    text-align: center;
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.container a {
+    color: white;
+    text-decoration: none;
+    line-height: 1.5em;
+    font-size: 0.8em;
+}
+
+.container li{
+    list-style-type: none;
+}
+
+
+.container p{
+    font-size: 0.8em;
+}
+
+.container span{
+    font-size: 0.8em;
+}
